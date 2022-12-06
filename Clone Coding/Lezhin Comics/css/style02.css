@@ -1,0 +1,106 @@
+body{
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', NanumBarunGothic, NanumGothic, 'Malgun Gothic', dotum, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 500px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+header .top p{
+    text-align: center;
+    font-size: 22pt;
+    margin: 50px 0 0 0;
+}
+section .sns_icon{
+    width: 100%;
+    height: 100px;
+    text-align: center;    
+}
+section .sns_icon button{
+    text-align: center;
+    vertical-align: middle;
+}
+section #img_btn1{
+    background: url( "../images/sns_logo01.svg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    vertical-align:middle;
+    margin: 0 5px 21px 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+section #img_btn2{
+    background: url( "../images/sns_logo02.svg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    vertical-align:middle;
+    margin: 0 5px 21px 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+section #img_btn3{
+    background: url( "../images/sns_logo03.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    vertical-align:middle;
+    margin: 0 5px 21px 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+section #img_btn4{
+    background: url( "../images/sns_logo04.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    vertical-align:middle;
+    margin: 0 5px 21px 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+section .login{
+    width: 100%;
+    height: 300px;
+}
+section form{
+    text-align: center;
+}
+section form .login_item{
+    margin: 10px 0 10px 0;
+}
+section form .login_item button{
+    width: 177px;
+    background-color: red;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+}
+section a{
+    text-decoration: none;
+    color: #000;
+}
