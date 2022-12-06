@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style03.css">
+    <title>회원가입</title>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h2>이메일로 회원가입</h2>
+        </div>
+    </header>
+    <section>        
+        <form class="join">
+            <div class="join_item">
+                <input id="join-email" class="login_input" type="email" name="username" required="" placeholder="이메일">
+            </div>
+            <div class="join_item">
+                <button type="submit">인증메일발송</button>
+            </div>                
+            </form>
+            <h2>SNS 계정으로 로그인 / 가입</h2>
+            <div class="sns_icon">
+                <button id="img_btn1"><a href="#"></a></button>
+                <button id="img_btn2"><a href="#"></a></button>
+                <button id="img_btn3"><a href="#"></a></button>
+                <button id="img_btn4"><a href="#"></a></button>
+            </div>
+        </div>
+    </section>
+    <script>
+        function join() {
+            var popUrl = "join.html";
+            var popOption = "top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no";
+            window.open(popUrl, "_blank", popOption);
+        }
+    </script>
+</body>
+</html>
