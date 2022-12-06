@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Papago</title>
+</head>     
+<body>
+    <header>
+        <div class="logo"><img src="images/logo.svg"></div>
+        <div class="header_menu">
+            <ul>
+                <li><a href="https://papago.naver.net/website?locale=ko"><b>웹사이트 번역</b></a></li>
+                <li><a href="https://papago.naver.com/docs"><b>문서번역</b></a></li>
+                <li><a href="https://papago.naver.com/gym"><b>GYM</b></a></li>
+                <li><a href="https://dict.naver.com"><b>사전</b></a></li>
+            </ul>
+        </div>
+        <div class="shot_menu"><button class="image_button_01"><a href="#"></a></button></div>
+        <div class="login_box">
+            <span class="tooltip_1">
+                <button class="image_button_02"><a href="#">작은창 번역</a></button><span class="tooltip_box_1">작은창 번역</span>
+            </span>
+            <span class="tooltip_1">
+                <button class="image_button_03"><a href="">즐겨찾기</a></button><span class="tooltip_box_1">즐겨찾기</span>
+            </span>
+            <span class="tooltip_1">
+                <button class="image_button_04"><a href="#">설정</a></button><span class="tooltip_box_1">설정</span>
+            </span>
+            <button class="image_button_05"><a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fpapago.naver.com%2F">로그인</a></button>
+            <button class="image_button_06"><a href="#"></a></button>
+        </div>
+    </header>
+    <section>
+        <div class="translate_area_01">
+            <div id="ddSourceLanguage" class="" data="auto">
+                <div class="dropdown_menu_top">
+                    <button class="image_button_07" type="button" onclick="clickbtn1()"><span>언어감지</span><span class="btn1">열기/닫기 아이콘</span></button>
+                    <button id="" class="image_button_08" title="" type="button"><span>소스/타겟 언어 바꾸기</span></button>
+                </div>
+                <div class="dropdown_menu_main">
+                    <ul class="dropdown_menu_inner">
+                        <li class="select_item_01 active_01"><a class="select_item_01a" href="#" title=""><span>언어감지</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>한국어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>영어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>일본어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>중국어(간체)</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>중국어(번체)</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>스페인어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>프랑스어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>독일어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>러시아어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>포르투갈어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>이탈리아어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>베트남어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>태국어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>인도네시아어</span></a></li>
+                        <li class="select_item_01"><a class="select_item_01a" href="#" title=""><span>힌디어</span></a></li>
+                    </ul>
+                </div>
+                <div class="text_area_1">
+                    <textarea class="text_count" placeholder="번역할 내용을 입력하세요."></textarea>
+                    <p><span id="counter">0</span>&nbsp;/&nbsp;<span>5000</span></p>
+                </div>
+                <div class="down_menu">
+                    <span class="tooltip_2">
+                        <button class="image_button_09" type="button""><span>발음듣기</span></button><span class="tooltip_box_2">발음듣기</span>
+                    </span>
+                    <span class="tooltip_2">
+                        <button class="image_button_10" type="button""><span>복사하기</span></button><span class="tooltip_box_2">복사하기</span>
+                    </span>
+                    <span class="tooltip_2">
+                        <button class="image_button_11" type="button""><span class="btn3">필기입력</span></button><span class="tooltip_box_2">필기입력</span>
+                    </span>
+                    <div class="translate_button">
+                        <button class="translate_btn" type="button"><span>번역하기</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="translate_area_02">
+            <div id="ddTargetLanguage" class="" data="ko">
+                <div class="dropdown_menu_top">
+                    <button class="image_button_07" title="" type="button" onclick="clickbtn2()"><span>한국어</span><span class="btn2">열기/닫기 아이콘</span></button>
+                </div>
+                <div class="dropdown_menu_main">
+                    <ul class="dropdown_menu_inner">
+                        <li class="select_item_02 active_02"><a class="select_item_02a" href="#" title=""><span>한국어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>영어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>일본어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>중국어(간체)</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>중국어(번체)</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>스페인어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>프랑스어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>독일어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>러시아어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>포르투갈어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>이탈리아어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>베트남어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>태국어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>인도네시아어</span></a></li>
+                        <li class="select_item_02""><a class="select_item_02a" href="#" title=""><span>힌디어</span></a></li>
+                    </ul>
+                </div>
+                <div class="text_area_2">
+                    
+                </div>
+                <div class="down_menu">
+                    <span class="tooltip_2">
+                        <button class="image_button_12" type="button""><span>발음듣기</span></button><span class="tooltip_box_2">발음듣기</span>
+                    </span>
+                    <span class="tooltip_2">
+                        <button class="image_button_13" type="button""><span>복사하기</span></button><span class="tooltip_box_2">복사하기</span>
+                    </span>
+                    <span class="tooltip_2">
+                        <button class="image_button_14" type="button""><span>즐겨찾기</span></button><span class="tooltip_box_2">즐겨찾기</span>
+                    </span>
+                    <span class="tooltip_2">
+                        <button class="image_button_15" type="button""><span class="btn4">공유하기</span></button><span class="tooltip_box_2">공유하기</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="translate_area_03">
+            <div class="switch_box">
+                <label class="switch_button">
+                    <input type="checkbox" id="check_box"><span class="switch_btn">자동완성</span>
+                </label>
+                <label for="check_box"><span class="autoComplete">자동완성</span></label>
+            </div>
+            <div class="bottom_menu">
+                <label for="input_url">웹사이트 번역</label>
+                <div class="url">
+                    <input type="url" id="input_url" placeholder="URL을 입력하세요.">
+                    <div class="select_menu">
+                        <button class="image_button_16" type="button" onclick="clickbtn3()"><span>한국어로 번역</span><span class="btn3">열기/닫기 아이콘</span></button>
+                        <ul class="dropdown_menu_inner">
+                            <li class="select_item_03 active_03"><a class="select_item_03a" href="#" title=""><span>한국어</span></a></li>
+                            <li class="select_item_03""><a class="select_item_03a" href="#" title=""><span>영어</span></a></li>
+                            <li class="select_item_03""><a class="select_item_03a" href="#" title=""><span>일본어</span></a></li>
+                            <li class="select_item_03""><a class="select_item_03a" href="#" title=""><span>중국어(간체)</span></a></li>
+                            <li class="select_item_03""><a class="select_item_03a" href="#" title=""><span>중국어(번체)</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="image_button_17" type="button"><a href="#">웹사이트 번역 실행</a></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_top_menu">
+                <button class="image_button_16" type="button"><a href="#"><span>APP Download</span></a></button>
+                <select>
+                    <option>한국어</option>
+                    <option>English</option>
+                    <option>日本語</option>
+                    <option>中文(简体)</option>
+                    <option>中文(繁體)</option>
+                    <option>Tiếng Việt</option>
+                    <option>Indonesia</option>
+                </select>
+            </div>            
+        </div>
+        <div class="footer_bottom">
+            <ul>
+                <li><a href="https://policy.naver.com/rules/service.html">이용약관</a></li>
+                <li><a href="https://policy.naver.com/policy/privacy.html"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="https://policy.naver.com/policy/disclaimer.html"><strong>책임의 한계와 법적고지</strong></a></li>
+                <li><a href="https://help.naver.com/service/16448/category/bookmark?lang=ko">고객센터</a></li>
+                <li><a href="https://help.naver.com/suggestion/input.help?serviceNo=16448&lang=ko&as_home=true">의견제안</a></li>
+                <li><a href="">준수사항</a></li>
+                <li><a href="">품질 개선 동의</a></li>
+                <li><a href="https://papago.naver.com/business"><strong>제휴∙API 이용문의</strong></a></li>
+            </ul>
+            <a class="footer_link" href="https://www.navercorp.com/ko">ⓒ NAVER Corp.</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../papago/js/papago.js"></script>
+</body>
+</html>
